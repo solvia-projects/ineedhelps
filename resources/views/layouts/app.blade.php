@@ -11,7 +11,8 @@
     <!-- ======== Page title ============ -->
     <title>@yield('title', config('app.name'))</title>
     <!--<< Favcion >>-->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/inh/icon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/images/inh/icon.png') }}">
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!--<< All Min Css >>-->
@@ -28,10 +29,12 @@
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+    <!--<< I Need Help brand overrides >>-->
+    <link rel="stylesheet" href="{{ asset('assets/css/ineedhelp.css') }}">
     @stack('styles')
 </head>
 
-<body>
+<body class="{{ $bodyClass ?? '' }}">
 
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
@@ -39,27 +42,7 @@
             <div class="spinner">
             </div>
             <div class="txt-loading">
-                <span data-text-preloader="N" class="letters-loading">
-                    N
-                </span>
-                <span data-text-preloader="E" class="letters-loading">
-                    i
-                </span>
-                <span data-text-preloader="O" class="letters-loading">
-                    O
-                </span>
-                <span data-text-preloader="T" class="letters-loading">
-                    T
-                </span>
-                <span data-text-preloader="E" class="letters-loading">
-                    E
-                </span>
-                <span data-text-preloader="C" class="letters-loading">
-                    C
-                </span>
-                <span data-text-preloader="H" class="letters-loading">
-                    H
-                </span>
+                <img class="preloader-logo" src="{{ asset('assets/images/inh/logo.png') }}" alt="I Need Help">
             </div>
             <p class="text-center">Loading</p>
         </div>

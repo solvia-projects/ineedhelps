@@ -1,6 +1,6 @@
-@extends('layouts.app', ['header' => 'index'])
+@extends('layouts.app', ['header' => 'index', 'bodyClass' => 'inh'])
 
-@section('title', 'Niotech - App Landing HTML Template')
+@section('title', 'I Need Help - Help Is Closer Than You Think')
 
 @section('content')
     <!-- Intro Section S T A R T -->
@@ -8,13 +8,11 @@
         <div class="intro-container-wrapper style1">
             <div class="container">
                 <div class="intro-wrapper style1 fix">
-                    <div class="shape1"><img src="{{ asset('assets/images/shape/introShape1_1.png') }}" alt="shape"></div>
-                    <div class="shape2"><img src="{{ asset('assets/images/shape/introShape1_2.png') }}" alt="shape"></div>
-                    <div class="shape3 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/shape/introShape1_3.png') }}"
+                    <div class="shape3 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/inh/star-blue.png') }}"
                             alt="shape"></div>
-                    <div class="shape4 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/shape/introShape1_4.png') }}"
+                    <div class="shape4 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/inh/star-blue.png') }}"
                             alt="shape"></div>
-                    <div class="shape5 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/shape/introShape1_5.png') }}"
+                    <div class="shape5 d-none d-xxl-block cir36"><img src="{{ asset('assets/images/inh/star-orange.png') }}"
                             alt="shape"></div>
                     <div class="container">
                         <div class="row">
@@ -22,103 +20,43 @@
                                 <div class="intro-content">
                                     <div class="intro-section-title">
                                         <div class="intro-subtitle">
-                                            <span>News!</span>Find Your Solution <img
+                                            <span>&ldquo;I Need Help&rdquo;</span>Find Your Solution <img
                                                 src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
                                         </div>
-                                        <h1 class="intro-title wow fadeInUp" data-wow-delay=".2s">We Develop Websites,
-                                            Applications, and Brands.</h1>
-                                        <p class="intro-desc wow fadeInUp" data-wow-delay=".4s">There are many
-                                            variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some form, by
-                                            injected humour, or randomised words which don't look even slightly
-                                            believable. If you are going to use a passage of Lorem Ipsum,</p>
+                                        <h1 class="intro-title wow fadeInUp" data-wow-delay=".2s">Help Is Closer Than
+                                            You Think</h1>
+                                        <p class="intro-desc wow fadeInUp" data-wow-delay=".4s">A real-time community
+                                            platform connecting people who need spontaneous help with nearby helpers.
+                                            Powered by live GPS, built for everyday needs&mdash;not emergencies.</p>
                                     </div>
                                     <div class="btn-wrapper style1 wow fadeInUp" data-wow-delay=".6s">
-                                        <a class="theme-btn" href="{{ url('/contact') }}">Get Started Now
+                                        <a class="theme-btn" href="#app">Download Now
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 viewBox="0 0 16 16" fill="none">
-                                                <g clip-path="url(#clip0_11_22)">
-                                                    <path
-                                                        d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                                        fill="white" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_11_22">
-                                                        <rect width="16" height="16" fill="white" />
-                                                    </clipPath>
-                                                </defs>
+                                                <path
+                                                    d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
+                                                    fill="white" />
                                             </svg>
-
                                         </a>
-                                        <a class="theme-btn style2 wow fadeInUp" data-wow-delay=".2s"
-                                            href="{{ url('/about') }}">Learn More
+                                        <a class="theme-btn style2" href="#solution">Learn More
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 viewBox="0 0 16 16" fill="none">
-                                                <g clip-path="url(#clip0_11_27)">
-                                                    <path
-                                                        d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                                        fill="#282C32" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_11_27">
-                                                        <rect width="16" height="16" fill="white" />
-                                                    </clipPath>
-                                                </defs>
+                                                <path
+                                                    d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
+                                                    fill="#282C32" />
                                             </svg>
                                         </a>
-                                    </div>
-                                    <div class="fancy-box-wrapper style1">
-                                        <div class="fancy-box style1 wow fadeInUp" data-wow-delay=".2s">
-                                            <div class="item">
-                                                <img src="{{ asset('assets/images/intro/introProfileThumb1_1.png') }}" alt="thumb">
-                                            </div>
-                                            <div class="item">
-                                                <h6>2,291</h6>
-                                                <p>Happy Customers</p>
-                                            </div>
-                                        </div>
-                                        <div class="fancy-box style5 wow fadeInUp" data-wow-delay=".4s">
-                                            <h6>4.8/5</h6>
-                                            <div class="rating">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="77" height="13"
-                                                    viewBox="0 0 77 13" fill="none">
-                                                    <g clip-path="url(#clip0_20_34)">
-                                                        <path
-                                                            d="M12.3738 4.23335L8.62048 3.8926L7.13714 0.419814C7.02762 0.164672 6.77843 0 6.50107 0C6.22371 0 5.97442 0.164672 5.8656 0.419814L4.38226 3.8926L0.62834 4.23335C0.353159 4.25875 0.120139 4.44515 0.0340334 4.70793C-0.0515761 4.9712 0.0274862 5.25997 0.235608 5.4425L3.07282 7.93034L2.23627 11.6148C2.17506 11.8857 2.28022 12.1659 2.505 12.3284C2.62583 12.4162 2.76778 12.46 2.91023 12.46C3.03265 12.46 3.15516 12.4275 3.26458 12.362L6.50107 10.4268L9.73697 12.362C9.97436 12.5038 10.2728 12.4909 10.4971 12.3284C10.7219 12.1659 10.8271 11.8857 10.7659 11.6148L9.92932 7.93034L12.7665 5.4425C12.9746 5.25997 13.0537 4.9718 12.9681 4.70793C12.8825 4.44465 12.649 4.25825 12.3738 4.23335Z"
-                                                            fill="#ECC132" />
-                                                        <path
-                                                            d="M28.3758 4.23335L24.6224 3.8926L23.1391 0.419814C23.0296 0.164672 22.7804 0 22.503 0C22.2257 0 21.9764 0.164672 21.8676 0.419814L20.3842 3.8926L16.6303 4.23335C16.3551 4.25875 16.1221 4.44515 16.036 4.70793C15.9504 4.9712 16.0294 5.25997 16.2376 5.4425L19.0748 7.93034L18.2382 11.6148C18.177 11.8857 18.2822 12.1659 18.507 12.3284C18.6278 12.4162 18.7697 12.46 18.9122 12.46C19.0346 12.46 19.1571 12.4275 19.2665 12.362L22.503 10.4268L25.7389 12.362C25.9763 12.5038 26.2748 12.4909 26.4991 12.3284C26.7239 12.1659 26.829 11.8857 26.7678 11.6148L25.9313 7.93034L28.7685 5.4425C28.9765 5.25997 29.0557 4.9718 28.9701 4.70793C28.8845 4.44465 28.6509 4.25825 28.3758 4.23335Z"
-                                                            fill="#ECC132" />
-                                                        <path
-                                                            d="M44.3777 4.23335L40.6244 3.8926L39.141 0.419814C39.0315 0.164672 38.7823 0 38.505 0C38.2276 0 37.9783 0.164672 37.8695 0.419814L36.3862 3.8926L32.6322 4.23335C32.3571 4.25875 32.124 4.44515 32.0379 4.70793C31.9523 4.9712 32.0314 5.25997 32.2395 5.4425L35.0767 7.93034L34.2402 11.6148C34.179 11.8857 34.2841 12.1659 34.5089 12.3284C34.6297 12.4162 34.7717 12.46 34.9141 12.46C35.0366 12.46 35.1591 12.4275 35.2685 12.362L38.505 10.4268L41.7409 12.362C41.9783 12.5038 42.2768 12.4909 42.501 12.3284C42.7258 12.1659 42.831 11.8857 42.7698 11.6148L41.9332 7.93034L44.7704 5.4425C44.9785 5.25997 45.0576 4.9718 44.972 4.70793C44.8864 4.44465 44.6529 4.25825 44.3777 4.23335Z"
-                                                            fill="#ECC132" />
-                                                        <path
-                                                            d="M60.3797 4.23335L56.6263 3.8926L55.143 0.419814C55.0335 0.164672 54.7843 0 54.5069 0C54.2296 0 53.9803 0.164672 53.8715 0.419814L52.3881 3.8926L48.6342 4.23335C48.359 4.25875 48.126 4.44515 48.0399 4.70793C47.9543 4.9712 48.0333 5.25997 48.2415 5.4425L51.0787 7.93034L50.2421 11.6148C50.1809 11.8857 50.2861 12.1659 50.5109 12.3284C50.6317 12.4162 50.7736 12.46 50.9161 12.46C51.0385 12.46 51.161 12.4275 51.2704 12.362L54.5069 10.4268L57.7428 12.362C57.9802 12.5038 58.2787 12.4909 58.503 12.3284C58.7278 12.1659 58.8329 11.8857 58.7717 11.6148L57.9352 7.93034L60.7724 5.4425C60.9804 5.25997 61.0596 4.9718 60.974 4.70793C60.8884 4.44465 60.6548 4.25825 60.3797 4.23335Z"
-                                                            fill="#ECC132" />
-                                                        <path opacity="0.3"
-                                                            d="M76.3816 4.23335L72.6283 3.8926L71.145 0.419814C71.0354 0.164672 70.7862 0 70.5089 0C70.2315 0 69.9822 0.164672 69.8734 0.419814L68.3901 3.8926L64.6362 4.23335C64.361 4.25875 64.128 4.44515 64.0418 4.70793C63.9562 4.9712 64.0353 5.25997 64.2434 5.4425L67.0806 7.93034L66.2441 11.6148C66.1829 11.8857 66.288 12.1659 66.5128 12.3284C66.6336 12.4162 66.7756 12.46 66.918 12.46C67.0405 12.46 67.163 12.4275 67.2724 12.362L70.5089 10.4268L73.7448 12.362C73.9822 12.5038 74.2807 12.4909 74.505 12.3284C74.7297 12.1659 74.8349 11.8857 74.7737 11.6148L73.9371 7.93034L76.7743 5.4425C76.9824 5.25997 77.0615 4.9718 76.9759 4.70793C76.8903 4.44465 76.6568 4.25825 76.3816 4.23335Z"
-                                                            fill="#565656" />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_20_34">
-                                                            <rect width="77.0099" height="12.46" fill="white" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                                Rating
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-5 order-1 order-xl-2">
                                 <div class="intro-thumb">
-                                    <div class="thumbShape1"><img src="{{ asset('assets/images/shape/introThumbShape1_1.png') }}"
-                                            alt="thumbShape"></div>
-                                    <div class="thumbShape2"><img src="{{ asset('assets/images/shape/introThumbShape1_2.png') }}"
-                                            alt="thumbShape"></div>
+                                    <div class="thumbShape1"><img
+                                            src="{{ asset('assets/images/inh/hero-ellipse-outer.svg') }}" alt="shape"></div>
+                                    <div class="thumbShape2"><img
+                                            src="{{ asset('assets/images/inh/hero-ellipse-inner.svg') }}" alt="shape"></div>
                                     <img class="main-thumb img-custom-anim-right wow fadeInUp" data-wow-delay=".4s"
-                                        src="{{ asset('assets/images/intro/introThumb1_1.png') }}" alt="thumb">
+                                        src="{{ asset('assets/images/inh/hero-phone.png') }}" alt="I Need Help app preview">
                                 </div>
                             </div>
                         </div>
@@ -128,60 +66,8 @@
         </div>
     </section>
 
-    <!-- Brand Slider Section S T A R T -->
-    <div class="brand-slider-section section-padding fix">
-        <div class="brand-slider-container-wrapper style1">
-            <div class="container">
-                <div class="brand-slider-wrapper style1">
-                    <h2 class="single-section-title wow fadeInUp" data-wow-delay=".2s">
-                        Millions of clients trust us.
-                    </h2>
-                    <div class="row">
-                        <div class="slider-area brandSliderOne">
-                            <div class="swiper gt-slider" id="brandSliderOne"
-                                data-slider-options='{"loop": true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":2,"centeredSlides":true},"768":{"slidesPerView":3},"1025":{"slidesPerView":4},"1400":{"slidesPerView":5}}}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_1.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_2.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_3.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_4.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_5.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="brand-logo">
-                                            <img src="{{ asset('assets/images/logo/brandLogo1_3.png') }}" alt="logo">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- About Us Section S T A R T -->
-    <section class="about-section fix">
+    <section class="about-section section-padding fix" id="about">
         <div class="about-container-wrapper style1">
             <div class="container">
                 <div class="about-wrapper style1">
@@ -198,12 +84,11 @@
                                 <div class="thumbShape4 d-none d-xxl-block cir36"><img
                                         src="{{ asset('assets/images/shape/aboutThumbShape1_4.png') }}" alt="shape"></div>
                                 <div class="main-thumb">
-                                    <img src="{{ asset('assets/images/about/aboutThumb1_1.png') }}" alt="thumb">
+                                    <img src="{{ asset('assets/images/inh/about-thumb.png') }}" alt="thumb">
                                 </div>
                                 <div class="absolute-thumb float-bob-x">
                                     <img src="{{ asset('assets/images/about/aboutThumb1_2.png') }}" alt="thumb">
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-xl-6">
@@ -212,77 +97,33 @@
                                     <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
                                         About Our App <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
                                     </div>
-                                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Simple Reports & Analytics
-                                        Backdown As it</h2>
-                                    <p class="section-desc wow fadeInUp" data-wow-delay=".6s">There are many variations
-                                        of passages of Lorem Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you
-                                        are going to use</p>
+                                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">The Problem</h2>
+                                    <p class="section-desc wow fadeInUp" data-wow-delay=".6s">Everyday Problems Need
+                                        Everyday Solutions.<br>A flat tire, a heavy box, or a laptop that won't boot
+                                        aren't emergencies. But formal services feel excessive, and posting on social
+                                        media takes too long. Capable helpers are often just around the corner, yet
+                                        there hasn't been a way to reach only the people close enough to
+                                        act&mdash;until now.</p>
                                 </div>
-                                <ul class="checklist style1 wow fadeInUp" data-wow-delay=".2s">
-                                    <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> With our
-                                        Technological and Marketing Solutions.</li>
-                                    <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> We are trusted all
-                                        over the world. </li>
-                                    <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> Start Your 14 Days
-                                        Free Trials Today! </li>
-                                </ul>
-                                <a class="theme-btn wow fadeInUp" data-wow-delay=".2s" href="{{ url('/about') }}">Discover More
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none">
-                                        <g clip-path="url(#clip0_18_41)">
-                                            <path
-                                                d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_18_41">
-                                                <rect width="16" height="16" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Process Section S T A R T -->
-    <section class="work-process-section section-padding fix">
-        <div class="work-process-container-wrapper style1">
-            <div class="container">
-                <div class="section-title text-center mxw-565 mx-auto">
-                    <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
-                        How It Work <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
-                    </div>
-                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">Make Your Device Manage Everything For You!</h2>
-                </div>
-                <div class="work-process-wrapper style1">
-                    <div class="shape"><img src="{{ asset('assets/images/shape/workProcessShape1_1.png') }}" alt="shape"></div>
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="work-process-box style1 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="step">STEP - 01</div>
-                                <div class="title">Download App</div>
-                                <div class="text">There are many variations of passages of Lorem</div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="work-process-box style1 child2 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="step">STEP - 02</div>
-                                <div class="title">Create account</div>
-                                <div class="text">There are many variations of passages of Lorem</div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="work-process-box style1 wow fadeInUp" data-wow-delay=".6s">
-                                <div class="step">STEP - 03</div>
-                                <div class="title">Install App, & Enjoy</div>
-                                <div class="text">There are many variations of passages of Lorem</div>
+                                <div class="problem-list wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="problem-col">
+                                        <div class="problem-head">
+                                            <img src="{{ asset('assets/images/inh/icon-cross-red.png') }}" alt="icon">
+                                            <span>Without a local channel</span>
+                                        </div>
+                                        <p class="problem-body">Requests go to broad social feeds or general
+                                            classifieds, untargeted, easy to miss, no distance or trust signal
+                                            attached.</p>
+                                    </div>
+                                    <div class="problem-col">
+                                        <div class="problem-head">
+                                            <img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">
+                                            <span>With proximity-first matching</span>
+                                        </div>
+                                        <p class="problem-body">A request only reaches people who are geographically
+                                            close enough to act on it right now.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -292,7 +133,7 @@
     </section>
 
     <!-- Advantage Section S T A R T -->
-    <section class="advantage-section fix">
+    <section class="advantage-section fix" id="solution">
         <div class="advantage-container-wrapper style1">
             <div class="container">
                 <div class="advantage-wrapper style1 section-padding">
@@ -302,41 +143,36 @@
                                 <div class="advantage-content">
                                     <div class="section-title wow fadeInUp" data-wow-delay=".2s">
                                         <div class="subtitle">
-                                            App Advantage <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
+                                            App Advantage <img src="{{ asset('assets/images/icon/fireIcon.svg') }}"
+                                                alt="icon">
                                         </div>
-                                        <h2 class="title">Get Benefit By Using Trending Apps</h2>
-                                        <p class="section-desc">There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some form, by
-                                            injected humour, or randomised words which don't look even slightly</p>
+                                        <h2 class="title">Our Solution</h2>
+                                        <p class="section-desc">The core loop is simple: Ask &rarr; Match &rarr; Help.
+                                            By leveraging live GPS, a 1 km broadcast radius, and real-time push
+                                            notifications, your request is instantly sent to capable people nearby. You
+                                            ask, the system matches you with a local Helper, and they navigate directly
+                                            to your location to get the job done.</p>
                                     </div>
                                     <div class="checklist-wrapper style1 wow fadeInUp" data-wow-delay=".4s">
                                         <ul class="checklist style1">
-                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> Friendly
-                                                Design</li>
-                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">SEO Optimized
-                                            </li>
+                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">
+                                                Friendly Design</li>
+                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">
+                                                SEO Optimized</li>
                                         </ul>
                                         <ul class="checklist style1">
-                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> Cloud
-                                                Storage </li>
-                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon"> Strong
-                                                Security </li>
+                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">
+                                                Cloud Storage</li>
+                                            <li><img src="{{ asset('assets/images/icon/checkmarkIcon.svg') }}" alt="icon">
+                                                Strong Security</li>
                                         </ul>
                                     </div>
-                                    <a class="theme-btn wow fadeInUp" data-wow-delay=".6s" href="{{ url('/about') }}"> Download
-                                        App
+                                    <a class="theme-btn wow fadeInUp" data-wow-delay=".6s" href="#app">Download App
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 16 16" fill="none">
-                                            <g clip-path="url(#clip0_43_54)">
-                                                <path
-                                                    d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                                    fill="white" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_43_54">
-                                                    <rect width="16" height="16" fill="white" />
-                                                </clipPath>
-                                            </defs>
+                                            <path
+                                                d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
+                                                fill="white" />
                                         </svg>
                                     </a>
                                 </div>
@@ -345,14 +181,126 @@
                                 <div class="advantage-thumb">
                                     <div class="thumb1 img-custom-anim-top wow fadeInDown" data-wow-delay=".8s"
                                         data-tilt data-tilt-max="10"><img
-                                            src="{{ asset('assets/images/advantage/advantageThumb1_1.png') }}" alt="thumb"></div>
+                                            src="{{ asset('assets/images/inh/advantage-phone-1.png') }}" alt="thumb"></div>
                                     <div class="thumb2 img-custom-anim-right wow fadeInRight" data-wow-delay=".4s"
                                         data-tilt data-tilt-max="15"><img
-                                            src="{{ asset('assets/images/advantage/advantageThumb1_2.png') }}" alt="thumb"></div>
-                                    <div class="shape1"><img src="{{ asset('assets/images/shape/advanceThumbShape1_1.png') }}"
+                                            src="{{ asset('assets/images/inh/advantage-phone-2.png') }}" alt="thumb"></div>
+                                    <div class="shape1"><img src="{{ asset('assets/images/inh/advantage-circle.svg') }}"
                                             alt="shape"></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section S T A R T -->
+    <section class="work-process-section section-padding fix" id="how-it-works">
+        @php
+            // Figma draws the Seeker/Helper switch but only fills one set of steps
+            // (still lorem). Copy below is derived from the Ask -> Match -> Help loop
+            // described in the "Our Solution" section - swap it when final copy lands.
+            $howItWorks = [
+                'seeker' => [
+                    ['Post Your Request', 'Describe what you need in seconds, by text or by voice, and drop your location.'],
+                    ['Get Matched', 'Your request is broadcast only to capable Helpers inside a 1 km radius.'],
+                    ['Help Arrives', 'Follow your Helper on live GPS until they reach you, then rate the job.'],
+                ],
+                'helper' => [
+                    ['Go Available', 'Switch yourself on and let nearby requests reach you in real time.'],
+                    ['Accept a Request', 'See what is needed and how far it is, then take the ones you can handle.'],
+                    ['Navigate & Earn', 'Turn-by-turn directions take you there. Finish the job and build your rating.'],
+                ],
+            ];
+        @endphp
+        <div class="work-process-container-wrapper style1">
+            <div class="container">
+                <div class="section-title text-center mxw-565 mx-auto">
+                    <div class="subtitle wow fadeInUp" data-wow-delay=".2s">
+                        How It Work <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
+                    </div>
+                    <h2 class="title wow fadeInUp" data-wow-delay=".4s">How it works</h2>
+                    <div class="role-switch" role="tablist">
+                        @foreach (array_keys($howItWorks) as $role)
+                            <button type="button" role="tab" data-role="{{ $role }}"
+                                class="{{ $loop->first ? 'active' : '' }}"
+                                aria-selected="{{ $loop->first ? 'true' : 'false' }}">{{ ucfirst($role) }}</button>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="work-process-wrapper style1">
+                    <div class="shape"><img src="{{ asset('assets/images/inh/process-wave.png') }}" alt="shape"></div>
+                    @foreach ($howItWorks as $role => $steps)
+                        <div class="row role-panel {{ $loop->first ? '' : 'd-none' }}" data-role-panel="{{ $role }}">
+                            @foreach ($steps as $i => [$title, $text])
+                                <div class="col-xl-4">
+                                    <div class="work-process-box style1 {{ $i === 1 ? 'child2' : '' }}">
+                                        <div class="step">STEP - 0{{ $i + 1 }}</div>
+                                        <div class="title">{{ $title }}</div>
+                                        <div class="text">{{ $text }}</div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section S T A R T -->
+    <section class="tech-stack-section" id="technology">
+        @php
+            // Figma fills 2 of the 6 cards it paginates. Cards 3-6 repeat those two
+            // as placeholders so the slider and its 6 dots are exercisable.
+            $techCards = [
+                [
+                    'title' => 'GPS Tracking',
+                    'built' => 'built with geolocator, flutter map and latlong2',
+                    'body' => 'Live location for Seekers and Helpers powers matching, in-app maps, and turn by-turn arrival tracking.',
+                ],
+                [
+                    'title' => 'Geofencing',
+                    'built' => 'built with geolocator, flutter map and latlong2',
+                    'body' => 'Every broadcast resolves recipients through one radius engine, so only Helpers within range ever see a request. Radius is configurable via BROADCAST_RADIUS_M (default 1,000m)',
+                ],
+            ];
+            $techSlides = array_map(fn ($i) => $techCards[$i % count($techCards)], range(0, 5));
+        @endphp
+        <div class="container">
+            <div class="tech-stack-wrapper section-padding">
+                <div class="shape2"><img src="{{ asset('assets/images/shape/testimonialShape1_2.png') }}" alt="shape"></div>
+                <div class="container">
+                    <div class="section-title text-center mxw-685 mx-auto">
+                        <div class="subtitle">
+                            Testimonial <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
+                        </div>
+                        <h2 class="title">Technology Stack</h2>
+                    </div>
+                    <div class="slider-area techStackSlider">
+                        <div class="swiper gt-slider" id="techStackSlider"
+                            data-slider-options='{"loop": true,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
+                            <div class="swiper-wrapper">
+                                @foreach ($techSlides as $card)
+                                    <div class="swiper-slide">
+                                        <div class="tech-stack-card">
+                                            <div class="card-head">
+                                                <div class="thumb">
+                                                    <img src="{{ asset('assets/images/inh/tech-avatar.jpg') }}" alt="thumb">
+                                                </div>
+                                                <div>
+                                                    <h5>{{ $card['title'] }}</h5>
+                                                    <p class="built-with">{{ $card['built'] }}</p>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">{{ $card['body'] }}</p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="slider-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -568,207 +516,6 @@
         </div>
     </section>
 
-    <!-- Testimonial Section S T A R T -->
-    <section class="testimonial-section">
-        <div class="testimonial-container-wrapper style1">
-            <div class="container">
-                <div class="testimonial-wrapper style1 section-padding fix">
-                    <div class="shape1"><img src="{{ asset('assets/images/shape/testimonialShape1_1.png') }}" alt="shape"></div>
-                    <div class="shape2"><img src="{{ asset('assets/images/shape/testimonialShape1_2.png') }}" alt="shape"></div>
-                    <div class="container">
-                        <div class="section-title text-center mxw-685 mx-auto">
-                            <div class="subtitle">
-                                Testimonial <img src="{{ asset('assets/images/icon/fireIcon.svg') }}" alt="icon">
-                            </div>
-                            <h2 class="title">What our clients say?</h2>
-                        </div>
-                        <div class="slider-area testimonialSliderOne">
-                            <div class="swiper gt-slider" id="testimonialSliderOne"
-                                data-slider-options='{"loop": true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_1.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Jacob Jones</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_2.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Masirul Jones</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_3.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Adam Jones</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_1.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Wade Warren</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_2.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Masirul Jones</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-card style1">
-                                            <div class="testimonial-header">
-                                                <div class="profile-thumb">
-                                                    <img src="{{ asset('assets/images/testimoial/testimonialProfileThumb1_3.jpg') }}"
-                                                        alt="thumb">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Adam Jones</h5>
-                                                    <p class="text">Team Leader</p>
-                                                </div>
-                                            </div>
-                                            <div class="testimonial-body">
-                                                <ul class="star-wrapper style1">
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                    <li><img src="{{ asset('assets/images/icon/starIcon1_1.svg') }}" alt="icon"></li>
-                                                </ul>
-                                                <p class="desc">There are many variations of passages of Lorem Ipsum
-                                                    available,a but
-                                                    chiropractor like majority have a suffered alteration in some form,
-                                                    by injected humour,</p>
-                                            </div>
-                                            <div class="quote-icon"><img src="{{ asset('assets/images/icon/quoteIcon.svg') }}"
-                                                    alt="icon"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Feature Section S T A R T -->
@@ -1430,3 +1177,20 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script>
+        document.querySelectorAll('.role-switch button').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var role = btn.dataset.role;
+                btn.parentElement.querySelectorAll('button').forEach(function (b) {
+                    b.classList.toggle('active', b === btn);
+                    b.setAttribute('aria-selected', b === btn);
+                });
+                document.querySelectorAll('[data-role-panel]').forEach(function (panel) {
+                    panel.classList.toggle('d-none', panel.dataset.rolePanel !== role);
+                });
+            });
+        });
+    </script>
+@endpush
