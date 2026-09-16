@@ -1,0 +1,432 @@
+/*-----------------------------------------------------------------
+  I Need Help — Figma redesign (navbar -> "Technology Stack" section)
+  Figma: I-Need-Help / node 0-1
+
+  Loaded after main.css. Everything is scoped to `body.inh` so the
+  Niotech template and the other pages stay untouched.
+-------------------------------------------------------------------*/
+
+.inh {
+  --inh-blue: #2563eb;
+  --inh-blue-15: rgba(37, 99, 235, 0.15);
+  --inh-blue-06: rgba(37, 99, 235, 0.06);
+}
+
+/* ============ 00. App chrome ============ */
+/* Brand-wide (not scoped to .inh): scrollbar, back-to-top and the mobile
+   drawer are the same shell on every page. */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #e8effc;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8effc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 10px;
+  border: 2px solid #e8effc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+.back-to-top {
+  background-color: #2563eb;
+}
+
+/* Hamburger + off-canvas drawer: this is the navbar on small screens.
+   Selectors mirror main.css's own chains so they win on specificity. */
+.header-1 .header-right .sidebar__toggle,
+.header-main .sidebar__toggle,
+.sidebar__toggle,
+.sidebar__toggle i {
+  color: #2563eb;
+}
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__close {
+  background-color: #2563eb;
+}
+
+.offcanvas__info .theme-btn,
+.offcanvas__info .header-button .theme-btn {
+  background-color: #2563eb;
+}
+
+.offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a {
+  background: #2563eb;
+}
+
+.offcanvas__info {
+  border-left-color: #2563eb;
+}
+
+/* ============ 00b. Splash / preloader ============ */
+/* Brand-wide (not scoped to .inh): the splash is the same on every page. */
+.preloader .animation-preloader .txt-loading {
+  line-height: 0;
+}
+
+.preloader .preloader-logo {
+  display: block;
+  width: 260px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.preloader .animation-preloader .spinner {
+  border-top-color: #2563eb;
+}
+
+.preloader p {
+  color: #2563eb;
+}
+
+@media (max-width: 767px) {
+  .preloader .preloader-logo {
+    width: 200px;
+  }
+}
+
+/* ============ 01. Header ============ */
+/* Design: solid white bar with a soft drop shadow, sticky at the top. */
+.inh .header-section-1 {
+  position: relative;
+  top: 0;
+  background: var(--white);
+  box-shadow: 0 4px 12.5px rgba(0, 0, 0, 0.06);
+}
+
+.inh .header-section-1 .logo img {
+  width: auto;
+  height: 73.5px;
+}
+
+.inh .header-section-1 .header-main .main-menu > ul > li > a {
+  color: var(--title) !important;
+}
+
+.inh .header-section-1 .header-main .main-menu > ul > li > a:hover {
+  color: var(--inh-blue) !important;
+}
+
+.inh .header-section-1 .theme-btn {
+  background: var(--inh-blue);
+}
+
+/* Figma 390w: 94px bar, logo 162x54 centred, hamburger parked on the right. */
+@media (max-width: 1199px) {
+  .inh .header-section-1 .header-main {
+    justify-content: center;
+    position: relative;
+  }
+
+  .inh .header-section-1 .logo img {
+    height: 54px;
+  }
+
+  .inh .header-section-1 .header-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* ============ 02. Intro / hero ============ */
+.inh .intro-wrapper.style1 {
+  background: var(--inh-blue-06);
+}
+
+.inh .intro-wrapper.style1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1149 954' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23g)'/><defs><radialGradient id='g' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(164.45 -156.6 188.61 198.06 -495.5 1566)'><stop stop-color='rgba(37,99,235,1)' offset='0'/><stop stop-color='rgba(63,117,237,0.875)' offset='0.125'/><stop stop-color='rgba(88,136,240,0.75)' offset='0.25'/><stop stop-color='rgba(140,173,245,0.5)' offset='0.5'/><stop stop-color='rgba(242,246,254,0)' offset='1'/></radialGradient></defs></svg>");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 1149px 954px;
+  pointer-events: none;
+}
+
+/* Long selector chain to beat main.css's own 5-class rule. */
+.inh .intro-wrapper.style1 .intro-content .intro-section-title .intro-subtitle {
+  background: var(--inh-blue-15);
+  color: var(--inh-blue);
+}
+
+/* Design: 20px / 32px instead of the template's 16px / 28px. */
+.inh .intro-wrapper.style1 .intro-content .intro-section-title .intro-desc {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* The h1 sits on one line in the design, slightly wider than the text column. */
+@media (min-width: 1400px) {
+  .inh .intro-title {
+    width: 840px;
+  }
+}
+
+.inh .intro-content .theme-btn:not(.style2) {
+  background: #3676ff;
+}
+
+@media (max-width: 767px) {
+  /* Figma 390w keeps the body token at 16/28 rather than the desktop 20/32. */
+  .inh .intro-wrapper.style1 .intro-content .intro-section-title .intro-desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+/* ============ 03. Shared accents ============ */
+/* Scoped to the redesigned sections only: everything below the technology
+   stack belongs to another team and keeps the template palette for now. */
+.inh .about-section .section-title .subtitle,
+.inh .advantage-section .section-title .subtitle,
+.inh .work-process-section .section-title .subtitle,
+.inh .tech-stack-section .section-title .subtitle {
+  background: var(--inh-blue-15);
+  color: var(--inh-blue);
+}
+
+.inh .about-section .theme-btn,
+.inh .advantage-section .theme-btn,
+.inh .tech-stack-section .theme-btn {
+  background: var(--inh-blue);
+}
+
+/* ============ 04. About -> "The Problem" ============ */
+/* Two comparison columns: red cross = today, green check = with the app. */
+.inh .problem-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+}
+
+.inh .problem-list .problem-col {
+  flex: 1 1 300px;
+  min-width: 0;
+}
+
+.inh .problem-list .problem-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.inh .problem-list .problem-head img {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.inh .problem-list .problem-head span {
+  color: var(--title);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.inh .problem-list .problem-body {
+  margin: 0;
+  padding-left: 40px;
+  color: var(--title);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+/* ============ 05. Advantage -> "Our Solution" ============ */
+.inh .advantage-wrapper.style1 {
+  background: #f8fbff;
+}
+
+/* ============ 06. Work process -> "How It Works" ============ */
+.inh .work-process-section .work-process-box.style1 .step {
+  color: var(--inh-blue);
+  background: var(--inh-blue-15);
+}
+
+/* Seeker / Helper switch under the section title. */
+.inh .role-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 7px;
+  border-radius: 30px;
+  background: var(--inh-blue-15);
+  backdrop-filter: blur(1px);
+  margin-bottom: 25px;
+}
+
+.inh .role-switch button {
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.32px;
+  color: var(--inh-blue);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.inh .role-switch button.active {
+  background: var(--white);
+  color: var(--title);
+}
+
+/* ============ 07. Technology stack ============ */
+/* Same widths the template gives the testimonial section it replaces. */
+@media (min-width: 550px) {
+  .inh .tech-stack-section > .container {
+    max-width: 1820px;
+  }
+
+  .inh .tech-stack-wrapper > .container {
+    max-width: 1200px;
+  }
+}
+
+.inh .tech-stack-section .tech-stack-wrapper {
+  position: relative;
+  border-radius: 50px;
+  background: var(--inh-blue-06);
+  overflow: hidden;
+}
+
+.inh .tech-stack-section .tech-stack-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1791 774' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23g)'/><defs><radialGradient id='g' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(256.34 -127.05 293.99 160.69 -772.36 1270.5)'><stop stop-color='rgba(37,99,235,1)' offset='0'/><stop stop-color='rgba(63,117,237,0.875)' offset='0.125'/><stop stop-color='rgba(88,136,240,0.75)' offset='0.25'/><stop stop-color='rgba(140,173,245,0.5)' offset='0.5'/><stop stop-color='rgba(242,246,254,0)' offset='1'/></radialGradient></defs></svg>");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.inh .tech-stack-section .tech-stack-wrapper > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.inh .tech-stack-section .swiper-slide {
+  height: auto;
+}
+
+.inh .tech-stack-section .shape2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.inh .tech-stack-card {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.inh .tech-stack-card .card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.inh .tech-stack-card .card-head .thumb {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.inh .tech-stack-card .card-head .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inh .tech-stack-card .card-head h5 {
+  margin: 0;
+  color: var(--title);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+
+.inh .tech-stack-card .card-head .built-with {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+/* main.css scopes this to .testimonial-wrapper.style1, which we renamed. */
+.inh .tech-stack-wrapper .slider-pagination {
+  max-width: 300px;
+  text-align: center;
+  margin: 55px auto 0;
+}
+
+.inh .tech-stack-card .card-text {
+  margin: 0;
+  color: var(--title);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.inh .tech-stack-section .swiper-pagination-bullet,
+.inh .tech-stack-section .swiper-pagination-bullet-active {
+  background-color: var(--inh-blue);
+}
+
+/* ============ 08. Mobile / tablet: what the 390w frame drops ============ */
+/* Diffing the Figma 1920w and 390w frames node-by-node, the small layout
+   removes every decorative layer plus the header CTA and inline nav.
+   The template hides some of these only below 768px (or only above 1400px),
+   which left them showing through the 768-1199 range - so they are all
+   pinned to the same breakpoint the nav collapses at. */
+@media (max-width: 1199px) {
+  .inh .header-section-1 .header-button,
+  .inh .intro-wrapper.style1 .shape3,
+  .inh .intro-wrapper.style1 .shape4,
+  .inh .intro-wrapper.style1 .shape5,
+  .inh .intro-thumb .thumbShape1,
+  .inh .intro-thumb .thumbShape2,
+  .inh .about-thumb .thumbShape1,
+  .inh .about-thumb .thumbShape2,
+  .inh .about-thumb .thumbShape3,
+  .inh .about-thumb .thumbShape4,
+  .inh .work-process-wrapper.style1 .shape {
+    display: none !important;
+  }
+}
