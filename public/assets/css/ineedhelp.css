@@ -209,7 +209,7 @@ html {
 /* Two comparison columns: red cross = today, green check = with the app. */
 .inh .problem-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 30px 40px;
 }
 
