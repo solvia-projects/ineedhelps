@@ -53,15 +53,11 @@
     {{-- ============ 01. Story hero ============ --}}
     <section class="st-story-hero">
         <div class="st-wrap">
-            <span class="st-eyebrow">Our Journey</span>
-            <h1 class="st-h1 wow fadeInUp" data-wow-delay=".1s" style="margin-top:14px;">
-                It started with
-                <span class="accent">a simple problem.</span>
+            <span class="st-h1">Our Journey</span>
+            <h1 class="wow fadeInUp" data-wow-delay=".1s" style="margin-top:14px;">
+                &ldquo;It started with
+                <span class="accent">a simple problem.&rdquo;</span>
             </h1>
-            <p class="st-lead st-measure wow fadeInUp" data-wow-delay=".2s" style="margin:18px auto 0;">
-                The idea for I Need Help! didn&rsquo;t start with an app.
-            </p>
-
             <figure class="st-polaroid wow fadeInUp" data-wow-delay=".3s">
                 <img src="{{ asset('assets/images/inh/story/journey-team.jpg') }}"
                     alt="The five students behind I Need Help!">
@@ -101,15 +97,10 @@
                 What stayed with us was how strange it felt: the help was close by,
                 but we had no way to find it quickly.
             </h2>
-
+<div class="st-arrow-down"><i class="fa-solid fa-arrow-down"></i></div>
             <div style="margin-top:36px;">
                 <p class="st-bubble">&ldquo;Could technology make that connection easier?&rdquo;</p>
             </div>
-
-            <figure class="st-polaroid" style="max-width:560px;transform:rotate(-1.8deg);">
-                <img src="{{ asset('assets/images/inh/story/nearby.jpg') }}" alt="A student receiving help at school">
-                <figcaption>help, once someone knew to look</figcaption>
-            </figure>
         </div>
     </section>
 
@@ -188,7 +179,7 @@
                 Asking shouldn&rsquo;t feel awkward.<br>Helping shouldn&rsquo;t feel like a hassle.
             </h2>
 
-            <div class="st-quote" style="margin-top:36px;">
+            <div class="st-eyebrow" style="margin-top:36px;">
                 <p>We wanted I Need Help! to make everyday help feel normal and immediate &mdash;
                     something people could turn to when a small problem came up.</p>
             </div>
@@ -196,12 +187,9 @@
             <figure class="st-polaroid" style="max-width:620px;transform:rotate(1.2deg);">
                 <img src="{{ asset('assets/images/inh/story/hero-team.jpg') }}"
                     alt="The five students behind I Need Help!">
-                <figcaption>the five of us, still helping each other</figcaption>
+                <figcaption>Help Better, Stronger Together <i class="fa-regular fa-heart"
+                    style="color:#ff8fa3;"></i></figcaption>
             </figure>
-
-            <p class="st-signoff">Help Better, Stronger Together <i class="fa-regular fa-heart"
-                    style="color:#ff8fa3;"></i></p>
-
             <div class="st-btn-row">
                 <a href="{{ url('/') }}" class="st-btn st-btn--ghost">
                     <i class="fa-solid fa-arrow-left-long"></i> Back to Home

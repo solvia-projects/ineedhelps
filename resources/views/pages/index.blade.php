@@ -32,8 +32,7 @@
                     </div>
 
                     <p class="st-lead st-measure wow fadeInUp" data-wow-delay=".3s">
-                        A story about a group of students who wanted to make everyday help easier &mdash;
-                        easier to ask for, easier to find, and easier to give.
+                        INeedHelp! connects people facing small, everyday problems with volunteers nearby who are ready to help. Press one button, describe what you need, and your request goes straight to the closest available helper through real-time GPS. No scheduling, no sign-up sheets, just quick help for the tasks bigger platforms overlook.
                     </p>
 
                     <div class="st-btn-row wow fadeInUp" data-wow-delay=".4s">
@@ -57,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="st-values">
+            <!-- <div class="st-values">
                 <div class="st-value">
                     <div class="st-value__icon"><i class="fa-solid fa-user-group"></i></div>
                     <div>
@@ -86,7 +85,7 @@
                         <p class="st-value__text">Small actions. A stronger tomorrow.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -305,27 +304,47 @@
     {{-- ============ 08. Chapter 05 — THE FUTURE ============ --}}
     <section class="st-section st-band" id="download">
         <div class="st-wrap">
-            <div class="st-head st-center">
-                <span class="st-chapter__label"><i class="fa-solid fa-rocket"></i> Chapter 05 &mdash; The Future</span>
-                <h2 class="st-h2">Where do we go from here?</h2>
-            </div>
+            <div style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
 
-            <div class="st-quote">
-                <div class="st-quote__mark">&ldquo;</div>
-                <p>Maybe help is closer than we think.</p>
-            </div>
+                {{-- LEFT: Chapter label + title + two-box row --}}
+                <div style="flex: 1; min-width: 280px;">
+                    <div class="st-head">
+                        <span class="st-chapter__label"><i class="fa-solid fa-rocket"></i> Chapter 05 &mdash; The Future</span>
+                        <h2 class="st-h2" style="margin-top: 12px;">Where do we go from here?</h2>
+                    </div>
 
-            <div class="st-cta">
-                <div>
-                    <h3>Want to know our story?</h3>
-                    <p>Meet the five students behind I Need Help!</p>
+                    {{-- Two boxes below the title --}}
+                    <div style="display: flex; gap: 16px; margin-top: 20px;">
+                        {{-- Left box (decorative / empty) --}}
+                        <div style="flex: 1; border-radius: 16px; padding: 24px; min-height: 100px;">
+                        </div>
+                        {{-- Right box: quote text --}}
+                        <div class="st-quote" style="flex: 1/3; margin: 0;">
+                            <div class="st-quote__mark">&ldquo;</div>
+                            <p>Maybe help is closer than we think.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="st-btn-row">
-                    <a href="{{ url('/our-journey') }}" class="st-btn st-btn--primary">
-                        Our Journey <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    <a href="#download" class="st-btn st-btn--ghost">Download App</a>
+
+                {{-- RIGHT: CTA Banner --}}
+                <div style="flex: 1; min-width: 260px;">
+                    <div class="st-cta" style="margin-top: 0; flex-direction: column; align-items: flex-start; position: relative; overflow: hidden;">
+                        <div style="position: absolute; right: -10px; top: -10px; font-size: 72px; opacity: 0.15; transform: rotate(20deg); pointer-events: none;">
+                            🚀
+                        </div>
+                        <div>
+                            <h3>Want to know our story?</h3>
+                            <p>Meet the five students behind I Need Help!</p>
+                        </div>
+                        <div class="st-btn-row" style="margin-top: 20px;">
+                            <a href="{{ url('/our-journey') }}" class="st-btn st-btn--primary">
+                                Our Journey <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                            <a href="#download" class="st-btn st-btn--ghost">Download App</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>

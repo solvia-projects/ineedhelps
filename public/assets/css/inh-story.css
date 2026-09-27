@@ -168,7 +168,7 @@
 }
 
 .st-head {
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 
 .st-head .st-h2 {
@@ -880,10 +880,10 @@
 .st-quote {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 44px;
+  /* padding: 40px 44px; */
   border-radius: 26px;
-  background: #fff;
-  box-shadow: var(--shadow);
+  /* background: #fff;
+  box-shadow: var(--shadow); */
   text-align: center;
   position: relative;
 }
