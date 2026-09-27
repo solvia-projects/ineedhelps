@@ -17,6 +17,7 @@ $pages = [
     'index-one-page' => 'index-one-page',
     'index-three-page' => 'index-three-page',
     'index-two-page' => 'index-two-page',
+    'our-journey' => 'story',
     '/' => 'index',
     'index2' => 'index2',
     'index3' => 'index3',

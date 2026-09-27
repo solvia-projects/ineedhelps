@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!--<< I Need Help brand overrides >>-->
     <link rel="stylesheet" href="{{ asset('assets/css/ineedhelp.css') }}">
+    <!--<< Story layout (homepage + Our Journey) >>-->
+    <link rel="stylesheet" href="{{ asset('assets/css/inh-story.css') }}">
     @stack('styles')
 </head>
 
