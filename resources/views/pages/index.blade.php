@@ -20,8 +20,6 @@
         <div class="st-wrap">
             <div class="st-hero__grid">
                 <div>
-                    <span class="st-eyebrow">A stronger community starts with you</span>
-
                     <h1 class="st-h1 wow fadeInUp" data-wow-delay=".1s">
                         Help is closer
                         <span class="accent">than you think.</span>
@@ -319,9 +317,12 @@
                         <div style="flex: 1; border-radius: 16px; padding: 24px; min-height: 100px;">
                         </div>
                         {{-- Right box: quote text --}}
-                        <div class="st-quote" style="flex: 1/3; margin: 0;">
-                            <div class="st-quote__mark">&ldquo;</div>
-                            <p>Maybe help is closer than we think.</p>
+                        <div style="flex: 1; margin: 0; padding-top: 10px;">
+                            <div style="position: relative; display: inline-block; padding: 0 15px;">
+                                <span style="font-size: 48px; color: #bae6fd; position: absolute; left: -10px; top: -20px; line-height: 1; font-weight: 900;">&ldquo;</span>
+                                <p style="font-size: 20px; font-weight: 800; color: #1e3a8a; margin: 0; position: relative; z-index: 1;">Maybe help is closer than we think.</p>
+                                <span style="font-size: 48px; color: #bae6fd; position: absolute; right: -15px; bottom: -35px; line-height: 1; font-weight: 900;">&rdquo;</span>
+                            </div>
                         </div>
                     </div>
                 </div>

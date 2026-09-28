@@ -11,36 +11,36 @@
 @php
     $members = [
         [
-            'name' => 'Arka',
-            'photo' => 'member-1.jpg',
+            'name' => 'Ajib',
+            'photo' => 'member-5.jpg',
             'quote' =>
                 'Building an app was not only about making features work. This project taught me how much thought has to go into keeping people safe when they actually use it.',
             'tags' => ['development', 'safety'],
         ],
         [
-            'name' => 'Aiden',
+            'name' => 'Rafael',
             'photo' => 'member-2.jpg',
             'quote' =>
                 'We finished what we started. I Need Help! taught me that empathy makes people comfortable asking for help, while giving others a chance to feel needed.',
             'tags' => ['collaboration', 'empathy'],
         ],
         [
-            'name' => 'Aidan',
+            'name' => 'Aiden',
             'photo' => 'member-3.jpg',
             'quote' =>
                 'I learned that ideas become stronger when they go through different perspectives and when we learn to rely on each other.',
             'tags' => ['teamwork', 'relying on each other'],
         ],
         [
-            'name' => 'Ajib',
+            'name' => 'Aidan',
             'photo' => 'member-4.jpg',
             'quote' =>
                 'Working on this app taught me how to turn real-life problems into practical solutions and improve ideas through feedback.',
             'tags' => ['real-life problems', 'feedback'],
         ],
         [
-            'name' => 'Raphael',
-            'photo' => 'member-5.jpg',
+            'name' => 'Arka',
+            'photo' => 'member-1.jpg',
             'quote' =>
                 'I learned how simple acts of help can create stronger connections and make communities more empathetic.',
             'tags' => ['community', 'helping others'],
@@ -138,36 +138,29 @@
 
     {{-- ============ 05. What we learned ============ --}}
     <section class="st-section" id="learned">
-        <div class="st-wrap">
+        <div class="st-wrap" style="max-width: 1400px;">
             <div class="st-head st-center">
-                <span class="st-eyebrow">What we learned</span>
-                <h2 class="st-h2">Five of us. Five different lessons.</h2>
+                <span class="st-eyebrow" style="letter-spacing: 0.2em; text-transform: uppercase; font-size: 12px; font-weight: 800; color: #6b7280;">What we learned</span>
+                <h2 class="st-h2" style="color: #1e3a8a;">Different perspectives.<br>A stronger INeedHelp!.</h2>
             </div>
 
-            <div class="st-members">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5 g-4 mt-4">
                 @foreach ($members as $member)
-                    <article class="st-member">
-                        <img src="{{ asset('assets/images/inh/story/' . $member['photo']) }}"
-                            alt="{{ $member['name'] }}">
-                        <div>
-                            <div class="st-member__name">{{ $member['name'] }}</div>
-                            <p class="st-member__quote">&ldquo;{{ $member['quote'] }}&rdquo;</p>
-                            <ul class="st-member__tags">
-                                @foreach ($member['tags'] as $tag)
-                                    <li>{{ $tag }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </article>
+                    <div class="col">
+                        <article style="background: #fff; border-radius: 24px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); height: 100%; display: flex; flex-direction: column;">
+                            <img src="{{ asset('assets/images/inh/story/' . $member['photo']) }}"
+                                alt="{{ $member['name'] }}" style="width: 100%; border-radius: 16px; margin-bottom: 20px; object-fit: contain;">
+                            <div style="flex-grow: 1;">
+                                <div style="color: #1d4ed8; font-size: 28px; font-weight: 700; font-family: 'Caveat', 'Comic Sans MS', cursive; margin-bottom: 12px;">{{ $member['name'] }}</div>
+                                <p style="font-size: 14px; line-height: 1.6; color: #4b5563; margin: 0;">{{ $member['quote'] }}</p>
+                            </div>
+                        </article>
+                    </div>
                 @endforeach
             </div>
 
-            <div class="st-strip">
-                @foreach (['strip-1.jpg', 'strip-2.jpg', 'strip-3.jpg', 'strip-4.jpg', 'strip-5.jpg'] as $shot)
-                    <figure>
-                        <img src="{{ asset('assets/images/inh/story/' . $shot) }}" alt="Behind the scenes">
-                    </figure>
-                @endforeach
+            <div style="text-align: center; margin-top: 50px; font-size: 28px; font-weight: 700; color: #1e3a8a; font-family: 'Caveat', 'Comic Sans MS', cursive;">
+                <span style="color: #fbbf24; margin-right: 10px;">//</span> Help Better, Stronger Together <i class="fa-regular fa-heart"></i>
             </div>
         </div>
     </section>

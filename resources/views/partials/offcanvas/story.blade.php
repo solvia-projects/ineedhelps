@@ -17,7 +17,6 @@
                 <ul class="st-nav" style="flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:34px;">
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('/our-journey') }}">Our Journey</a></li>
-                    <li><a href="{{ url('/#the-story') }}">The Story</a></li>
                 </ul>
 
                 <div class="offcanvas__contact">

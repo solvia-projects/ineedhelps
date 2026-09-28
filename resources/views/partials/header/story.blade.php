@@ -10,7 +10,6 @@
             <ul class="st-nav">
                 <li><a href="{{ url('/') }}" class="{{ $active === 'home' ? 'is-active' : '' }}">Home</a></li>
                 <li><a href="{{ url('/our-journey') }}" class="{{ $active === 'journey' ? 'is-active' : '' }}">Our Journey</a></li>
-                <li><a href="{{ url('/#the-story') }}">The Story</a></li>
             </ul>
         </nav>
 
