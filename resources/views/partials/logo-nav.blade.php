@@ -23,6 +23,4 @@
             <span class="st-logonav__label">Journey</span>
         </a>
     </div>
-
-    <p class="st-logonav__hint">Tap the logo to explore.</p>
 </div>

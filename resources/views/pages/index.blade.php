@@ -169,7 +169,7 @@
         <div class="st-wrap">
             <div class="st-head st-center">
                 <span class="st-chapter__label"><i class="fa-solid fa-screwdriver-wrench"></i> Chapter 02 &mdash;
-                    Build</span>
+                    Built</span>
                 <h2 class="st-h2">What makes it different?</h2>
                 <p class="st-lead">Real-time. Local. Human-centered.</p>
             </div>
